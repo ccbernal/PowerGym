@@ -1,7 +1,8 @@
 package co.powergym.interfacedao;
 
+import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.List;
 
 import co.powergym.model.Socio;
 
@@ -10,7 +11,7 @@ public interface SocioDaoInterface {
 	public boolean registrarSocio(String identificacion, Date fechaNacimiento, String primerNombre, String segundoNombre, String primerApellido,
             String segundoApellido, String correo, String telefono, int genero);
 	
-	public ArrayList<Socio> listaSocios();
+	public List<Socio> listaSocios();
 	
 	public boolean eliminarSocio(String identificacion);
 	

@@ -6,6 +6,8 @@
 package co.powergym.view;
 
 import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.Color;
 
 /**
  *
@@ -30,8 +32,13 @@ public class Principal extends JFrame {
     private void initComponents() {
 
         jDesktopPane1 = new javax.swing.JDesktopPane();
+        jDesktopPane1.setBackground(new Color(29, 77, 175));
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jPanel1.setBackground(new Color(0, 149, 239));
+        btnRegistrarSocio = new javax.swing.JButton();
+        btnRegistrarSocio.setForeground(Color.WHITE);
+        Color color = new Color(122, 110, 114);
+        btnRegistrarSocio.setBackground(color);
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -65,10 +72,10 @@ public class Principal extends JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton1.setText("Registro socio");
-        jButton1.setToolTipText("");
-        jButton1.setPreferredSize(new java.awt.Dimension(50, 50));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistrarSocio.setText("Registro socio");
+        btnRegistrarSocio.setToolTipText("");
+        btnRegistrarSocio.setPreferredSize(new java.awt.Dimension(50, 50));
+        btnRegistrarSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
@@ -102,7 +109,7 @@ public class Principal extends JFrame {
                 .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnRegistrarSocio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -118,7 +125,7 @@ public class Principal extends JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(btnRegistrarSocio, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -300,35 +307,38 @@ public class Principal extends JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
-    private javax.swing.JPanel jPanel1;
+    public javax.swing.JButton btnRegistrarSocio;
+    public javax.swing.JButton jButton2;
+    public javax.swing.JButton jButton3;
+    public javax.swing.JButton jButton4;
+    public javax.swing.JButton jButton5;
+    public javax.swing.JButton jButton6;
+    public javax.swing.JDesktopPane jDesktopPane1;
+    public javax.swing.JMenu jMenu1;
+    public javax.swing.JMenu jMenu2;
+    public javax.swing.JMenu jMenu3;
+    public javax.swing.JMenu jMenu4;
+    public javax.swing.JMenu jMenu5;
+    public javax.swing.JMenu jMenu6;
+    public javax.swing.JMenu jMenu7;
+    public javax.swing.JMenuBar jMenuBar1;
+    public javax.swing.JMenuItem jMenuItem1;
+    public javax.swing.JMenuItem jMenuItem10;
+    public javax.swing.JMenuItem jMenuItem11;
+    public javax.swing.JMenuItem jMenuItem12;
+    public javax.swing.JMenuItem jMenuItem13;
+    public javax.swing.JMenuItem jMenuItem14;
+    public javax.swing.JMenuItem jMenuItem2;
+    public javax.swing.JMenuItem jMenuItem3;
+    public javax.swing.JMenuItem jMenuItem4;
+    public javax.swing.JMenuItem jMenuItem5;
+    public javax.swing.JMenuItem jMenuItem6;
+    public javax.swing.JMenuItem jMenuItem7;
+    public javax.swing.JMenuItem jMenuItem8;
+    public javax.swing.JMenuItem jMenuItem9;
+    public javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+	public JButton getBtnRegistrarSocio() {
+		return btnRegistrarSocio;
+	}
 }
